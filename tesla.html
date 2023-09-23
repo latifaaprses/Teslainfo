@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Tesla informations">
+  <meta name="keywords" content="Tesla, e-car,Elon Musk">
+  <meta name="author" content="Latifa Comrad">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="assets" href="assets/">
+  <link rel="stylesheet" href="mystyle.css">
+  <link rel="updsheet" href="updates.html">
+  <link rel="temosheet" href="teslam.html">
+  <title>Tesla informations</title>
+  <link rel="icon" href="tesla-s.png" type="image/x-icon">
+</head>
+
+<body>
+
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="tesla.html">Home</a>
+    <a href="updates.html">Updates</a>
+    <a href="teslam.html">Tesla Models</a>
+    <a href="#">Engineering stuff</a>
+    <a href="#">About</a>
+  </div>
+
+    <button class="openbtn" onclick="openNav()">☰</button>
+
+  <section id="main">
+    <div class="text">
+      <p>Less pollution, more features.</p>
+    </div>
+  
+    <div class="box">
+      <img src="assets/intro33.jpg" class="full-img">
+    </div>
+    <div class="title">
+      <h1>Tesla Motors</h1>
+    </div>
+    <div class="logo">
+   
+     
+    </div>
+    <a href="#section2" id="arrow" >
+      <img src="assets/method-draw-image.svg" style="width: 40px; height:40px"/>
+    </a>
+
+  </section>
+
+  <section id="section2">
+
+    <div class="text text-margin">
+      <p>Feel the elegance.</p>
+    </div>
+    <img src="assets/interior2.jpg" class="full-img"/>
+  </section>
+  <section id="section3">
+    <div class="text">
+      <p>Sense the speed.Enjoy the ride.</p>
+    </div>
+    <img src="assets/klj.jpg"class="full-img" />
+  </section>
+  <section id= "section4">
+    <div id="about">
+     <p>Still haven't got your Tesla?</p>
+     <a href="https://shop.tesla.com/">Get one!</a>
+    </div>
+  </section>
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "270px";
+      document.getElementById("main").style.marginLeft = "270px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+    var link = document.getElementByClass('openbtn');
+    link.style.visibility = 'hidden';
+  
+  </script>
+
+  </div>
+
+
+  </div>
+
+</body>
+
+</html>

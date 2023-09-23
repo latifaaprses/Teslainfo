@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylsheet" href="updatesstyle.css">    
+    <link rel="homesheet" href="tesla.html">
+    <title>Tesla Models</title>
+    <link rel = "icon" href = "tesla-s.png" type = "image/x-icon"> 
+</head>
+<style>
+.text{
+  margin-top: 100px; 
+  font-size: 75px;
+  z-index:9;
+ 	width: 70vw; 
+  height: 70vh;
+  left:275px;
+  text-align: center;
+  font-family: Gotham Medium,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+  position:absolute;
+  color:#1a1616;
+} 
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+ 
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color:#6e6868;
+  display: block;
+  transition: 0.3s;
+  font-family: Gotham Medium,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif; 
+
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  z-index: 3;
+  position:relative;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  z-index: 3;
+  padding: 16px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+.title{
+    position:absolute;
+    top:0;
+    left:0;
+    text-align:center;
+    width:100vw;
+
+  
+}
+h1{
+    margin-top:4px;
+    font-size: 50px;
+    font-family: Gotham Medium,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    position:relative;
+}
+.box{ 
+	width: 100vw; 
+  height: 100vh;
+  top: 0;
+  left: 0;
+ 
+  position: absolute;
+} 
+
+  </style>
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href = "tesla.html">Home</a>
+        <a href="updates.html">Updates</a>
+        <a href="teslam.html">Tesla Models</a>
+        <a href="#">Engineering stuff</a>
+        <a href="#">About</a>
+    </div>
+    <div class = "text">
+      <p>The faster, the better.</p>
+    </div>
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">☰</button>  
+      <div class="box">
+        <img src= "intro4.jpg"  style="width: 100%; height: 100%;">
+      </div>  
+    </div>
+<div class="title">
+    <h1>Tesla Models</h1>
+</div>
+
+
+    <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "270px";
+      document.getElementById("main").style.marginLeft = "270px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+ 
+</body>
+</html>
